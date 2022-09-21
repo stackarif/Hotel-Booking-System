@@ -40,6 +40,23 @@
           </li>
         </ul>
       </li>
+
+      <li class="menu-header small text-uppercase">
+        <span class="menu-header-text">Booking Section</span>
+      </li>
+      <li class="menu-item {{ $route == 'booked.room' ? 'active open' : '' }}">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bx-window-open"></i>
+          <div data-i18n="Account Settings">Booking</div>
+        </a>
+        <ul class="menu-sub">
+          <li class="menu-item {{ $route == 'booked.room' ? 'active' : '' }}">
+            <a href="{{ route('booked.room') }}" class="menu-link">
+              <div data-i18n="Account">Booking List</div>
+            </a>
+          </li>
+        </ul>
+      </li>
       <!--Room Section-->
       <li class="menu-header small text-uppercase">
         <span class="menu-header-text">Room Section</span>

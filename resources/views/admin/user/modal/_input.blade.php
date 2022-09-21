@@ -54,5 +54,8 @@
     </div>
 
 <div class="modal-footer">
-  <button type="submit" class="button-create">{{ trans('sentence.save_changes')}}</button>
+  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+    {{ trans('sentence.close')}}
+  </button>
+  <button type="submit" class="btn btn-primary">{{ trans('sentence.save_changes')}}</button>
 </div>

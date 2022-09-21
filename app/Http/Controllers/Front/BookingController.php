@@ -43,7 +43,7 @@ class BookingController extends Controller
         DB::beginTransaction();
         
         try {
-            Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+            Stripe\Stripe::setApiKey(env('STRIPE_SECRET_KEY'));
             Stripe\Charge::create ([
                     "amount" => $days * $request->price,
                     "currency" => "usd",

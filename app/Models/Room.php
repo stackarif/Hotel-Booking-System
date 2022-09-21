@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Room extends Model
 {
     use HasFactory, Imageable;
+    
     protected $guarded = [];
 
     public function createdBy()

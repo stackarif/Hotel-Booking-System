@@ -77,6 +77,7 @@
                 </div>
               </li>
             @empty
+            <span>{{ trans('sentence.no_activity_found')}}</span>
             @endforelse
           </ul>
         </div>

@@ -58,9 +58,9 @@
         <div class="card-body">
           <div class="d-flex align-items-start justify-content-between">
             <div class="content-left">
-              <span>Pending Users</span>
+              <span>Total Revenue</span>
               <div class="d-flex align-items-end mt-2">
-                <h4 class="mb-0 me-2">{{ pendingUsers() }}</h4>
+                <h4 class="mb-0 me-2">{{ getTotalRevenue() ?? "NULL" }}</h4>
                 <small class="text-success">(+42%)</small>
               </div>
             </div>

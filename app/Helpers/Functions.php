@@ -4,6 +4,7 @@ use App\Models\Role;
 use App\Models\User;
 use App\Models\Audit;
 use App\Enums\UserType;
+use App\Models\Invoice;
 use App\Models\Setting;
 use App\Models\Theme;
 use Illuminate\Support\Facades\DB;
@@ -338,5 +339,13 @@ if (!function_exists('theme')) {
     function theme()
     {
         return Theme::first()->theme;
+    }
+}
+
+if (!function_exists('getTotalRevenue')) {
+
+    function getTotalRevenue()
+    {  
+       return Invoice::query()->select('total_price')->sum('total_price');
     }
 }
