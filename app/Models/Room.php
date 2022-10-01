@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    use HasFactory, Imageable;
+   use HasFactory, Imageable;
     
     protected $guarded = [];
 

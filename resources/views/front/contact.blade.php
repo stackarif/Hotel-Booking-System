@@ -4,7 +4,9 @@
         <div class="contact-agileits">
           <h4>Contact Us</h4>
           <p class="contact-agile2">Sign Up For Our News Letters</p>
-          <form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
+          <form action="{{route('contact')}}" method="POST" name="sentMessage" id="contactForm" novalidate>
+            @csrf
+            
             <div class="control-group form-group">
                 <div class="controls">
                     <label class="contact-p1">Full Name:</label>

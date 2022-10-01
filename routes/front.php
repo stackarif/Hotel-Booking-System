@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Front\BookingController;
+use App\Http\Controllers\front\ContactController;
 use App\Http\Controllers\Front\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\HomeController;
@@ -25,3 +26,4 @@ Route::get('complete/payment', [BookingController::class,'payment'])
 Route::post('complete/payment', [BookingController::class,'completeBooking'])->name('payment.complete')->middleware('auth');
 Route::get('my/booking', [BookingController::class,'myBooking'])->name('myBooking')->middleware('auth');
 Route::get('invoice/{booking}', [InvoiceController::class,'invoice'])->name('invoice')->middleware('auth');
+Route::post('/contact',[ContactController::class,'contact'])->name('contact');
